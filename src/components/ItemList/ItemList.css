@@ -1,0 +1,10 @@
+.itemList{
+    text-align: center;
+}
+@media only screen and (max-width: 750px) {
+    .itemList{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}

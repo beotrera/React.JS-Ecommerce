@@ -1,0 +1,26 @@
+.info-container{
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    margin: 40px 0;
+}
+.info-item{
+    max-width: 375px;
+    display: flex;
+    padding-left:10px;
+    align-items: center;
+}
+.info-item img{
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+.left{
+    border-right: 1px solid;
+}
+
+@media only screen and (max-width: 750px) {
+    .info-container{
+        display: none;
+    }
+}

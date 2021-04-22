@@ -1,0 +1,17 @@
+.size-container{
+    width: 100%;
+    text-align: center;
+}
+.size-container img{
+    max-width: 80%;
+}
+
+
+@media only screen and (max-width: 750px) {
+    .size-container img{
+        max-width: 100%;
+    }
+    .size-container{
+        margin: 20px 0;
+    }
+}

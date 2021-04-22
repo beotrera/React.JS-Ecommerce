@@ -1,0 +1,44 @@
+.count-container{
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+.count{
+    margin: 10px 0;
+}
+.count-input{
+    width: 70px;
+    text-align: center;
+    border: none;
+    background-color: #efecd9;
+    border-bottom: 1px solid black;
+    padding: 3px 0;
+    margin: 0 15px;
+    font-weight: bold;
+}
+.count-button{
+    background: none;
+    border:none;
+    cursor: pointer;
+    font-size: 20px;
+}
+.add{
+    background-color: black !important;
+    height: 40px;
+    width: 200px;
+    border: 1px solid black;
+    font-size: 14px;
+    color: white;
+    margin-top: 40px;
+}
+.add:hover{
+    background-color: #212121 !important
+}
+.sinStock{
+    justify-content: center;
+    padding: 20px 0;
+}
+.sinStock h3{
+    width: 170px;
+}
+

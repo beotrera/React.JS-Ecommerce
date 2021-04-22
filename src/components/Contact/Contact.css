@@ -1,0 +1,86 @@
+.contact-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    min-height: 70vh;
+    font-weight: bold;
+}
+.data-container{
+    width: 45%;
+}
+.data-container-text{
+    margin-bottom: 20px;
+}
+.data-container a{
+    text-decoration: none;
+    color: black;
+}
+.data-container ul{
+    display: inline-block;
+    list-style: none;
+}
+.data-container-list-left{
+    vertical-align: top;
+    margin-right: 30px;
+}
+.data-container-list-left li,.data-container-list-right li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.data-container-list-left img,.data-container-list-right img{
+    margin-right: 10px;
+}
+.form-container{
+    width: 40%;
+    margin-left: 10px;
+}
+
+.form div label{
+    display: block;
+    margin-bottom: 4px;
+}
+.form div input{
+    height: 40px;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border:none;
+}
+.form div textarea{
+    width: 100%;
+    border:none;
+}
+.input-enviar{
+    float: right;
+    width: 160px;
+    height: 35px;
+    background: none;
+    color: white;
+    background-color: black;
+    border: 0.1px solid black;
+    margin-top: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.footer-list-item-link:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 750px) {
+    .contact-container{
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 50px 0;
+    }
+    .data-container{
+        width: 80%;
+    }
+    .form-container{
+        margin-bottom: 40px;
+        width: 80%;
+    }
+}

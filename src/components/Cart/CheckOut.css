@@ -1,0 +1,94 @@
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    margin: 0 -16px;
+}
+.col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+}
+.col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+}
+.col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+}
+.col-25,.col-50,.col-75 {
+    padding: 0 16px;
+}
+.col-50 h3{
+    margin-bottom: 20px;
+}
+.container{
+    background-color: white;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+  }
+input[type=text] {
+    width: 90%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+label {
+    margin-bottom: 10px;
+    display: block;
+}
+.icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+}
+.icon-container img{
+    width: 64px;
+    margin-right: 5px;
+}
+.btn {
+    background-color:black !important;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+}
+.btn:hover {
+    background-color: #212121 !important;
+}
+hr{
+    border: 1px solid lightgrey;
+}
+.price{
+    float: right;
+    color: grey;
+}
+.anio{
+    width: 5% !important;
+}
+.row-container{
+    padding: 15px;
+    margin: 80px 0;
+}
+.col-50 select{
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.total-line{
+    margin-top: 20px;
+}
+@media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }

@@ -1,0 +1,120 @@
+.cart-container{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cart-header{
+    background-color: white;
+    padding: 20px;
+    margin: 30px 0 20px;;
+}
+.cart-list{
+    width: 60%;
+    list-style: none;
+    margin: 20px 0;
+}
+.cart-list-item{
+    background-color: white;
+    padding:10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.cart-list-item-img{
+    width: 80px;
+}
+.delete-button{
+    background: none;
+    border: none;
+    cursor:pointer;
+    width: 32px;
+}
+.delete-button img{
+    max-width: 100%;
+}
+.payment{
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.payment span{
+    display: block;
+}
+.payment img{
+    border: 1px solid black;
+    border-radius: 5px;
+    max-width: 62px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.checkout{
+    background-color: white;
+    padding: 20px;
+    min-width: 280px;
+}
+.checkout-title{
+    display: block;
+}
+.checkout-link{
+    text-decoration: none;
+    color: white;
+}
+.checkout-button:hover{
+    background-color: #212121;
+}
+.checkout-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+.checkout-button-img{
+    margin-right: 10px;
+}
+.checkout-button-img img{
+    width: 40px;
+}
+.checkout-button-text{
+    width: 100%;
+    text-align: center;
+}
+.payment-pull{
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 40px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+.payment-pull:hover{
+    text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 850px) {
+    .cart-header{
+        width: 89%;
+    }
+    .cart-list{
+        width: 90%
+    }
+    .cart-list-item-titl,.cart-list-item-price{
+        font-size: 12px;
+    }
+    .cart-list-item-img{
+        width: 60px;
+        padding: 5px;
+    }
+    .payment-pull{
+        display: none;
+    }
+
+}

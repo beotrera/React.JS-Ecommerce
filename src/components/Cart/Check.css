@@ -1,0 +1,12 @@
+.check-container{
+    min-height: 80.17vh;
+    justify-content: center;
+    align-items: center;
+}
+.check-container div{
+    height: 300px;
+    text-align: center;
+}
+.check-container div h3,.check-container div h1{
+    margin-bottom: 30px;
+}

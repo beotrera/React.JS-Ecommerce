@@ -1,0 +1,180 @@
+.Navbar-container{
+    height: 70px;
+}
+.Navbar{
+    height: 70px;
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background-color: #f1d3ad;
+    border-bottom:1px solid black ;
+}
+.Navbar a{
+    text-decoration: none;
+    color: black;
+}
+.Navbar-icon{
+    position: absolute;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 1%;
+}
+.Navbar-icon p{
+    font-size: 22px;
+    display: inline-block;
+    font-family: 'Kaushan Script'
+}
+.Navbar-icon-img{
+    width:46px;
+}
+.Navbar-menu-open{
+    height: 100%;
+    width: 100%;
+}
+.Navbar-menu-open-list{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Navbar-menu-open-list-item{
+    display: inline-block;
+}
+.Navbar-menu-open-list-item-link{
+    width: 100%;
+    padding:15px 30px;
+    font-weight: 600;
+}
+.Navbar-menu-open-list-item::after{
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: black;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+    position: relative;
+    top:15px
+}
+.Navbar-menu-open-list-item::before{
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: black;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+    position: relative;
+    bottom: 15px;
+
+}
+.Navbar-menu-open-list-item:hover:after,.Navbar-menu-open-list-item:hover::before{
+    opacity: 3;
+}
+/* NavBar Hidden */
+
+.Navbar-backdrop{
+    background-color: rgba(50, 50, 50, .65)   ;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .4s ease-in-out;
+}
+.Navbar-menu-logo{
+    text-align: right;
+    padding: 13px;
+}
+.Navbar-menu-logo button{
+    background: none;
+    border:none;
+    cursor: pointer;
+}
+.Navbar-menu-logo span{
+    font-size: 20px;
+    color:black;
+}
+.header-Navbar-menu-hidden{
+    text-align: left;
+    position: fixed;
+    z-index: 4 !important;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 400px;
+    background-color: #cfad99;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(5%);
+    transition: all .4s ease-in-out;
+}
+.open,.openB{
+    visibility:visible;
+    opacity: 1;
+    transform: translateX(0);
+    transition: all .4s ease-in-out;
+}
+.Navbar-menu-hiden-list{
+    margin-top: 20px;
+    list-style: none;
+}
+.Navbar-menu-hiden-list-item{
+    padding: 20px;
+    border-top: 1px solid black;
+    letter-spacing: 1px;
+}
+.Navbar-menu-hiden-list-item-link{
+    display: block;
+    height: 30px;
+    text-decoration: none;
+    color: black;
+}
+.Navbar-menu-hiden-list-item-link:hover{
+    font-weight: 600;
+}
+.Navbar-menu-logo span:hover{
+    color:gray !important
+}
+.Navbar-menu-container{
+    display: none;
+    align-items: center;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    margin-right: 2%;
+}
+.Navbar-menu-buttom{
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background: none;
+    border:none;
+    cursor: pointer;
+}
+.Navbar-menu-buttom img{
+    width: 32px;
+    margin-left: 4px;
+}
+.active{
+    color:white !important
+}
+@media only screen and (max-width: 920px) {
+    .Navbar-menu-container{
+        display: flex;
+    }
+    .cart-icon{
+        right: 44px;
+        top: -2px;
+    }
+    .Navbar-menu-open-list{
+        display: none;
+    }
+}
