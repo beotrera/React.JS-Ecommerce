@@ -26,8 +26,8 @@ function PopUp() {
                 <p className="cart-list-item-price">$  <strong>{Cart.lastItem.item.price}</strong></p>
               </div>
               <div className="PopUp-item-nav">
-                  <Link to="/products">Segui comprando</Link>
-                  <Link to="/cart" className="PopUp-item-nav-button">
+                  <Link to="/products" onClick={(e)=>Cart.setPopUp(true)}>Segui comprando</Link>
+                  <Link to="/cart" className="PopUp-item-nav-button" onClick={(e)=>Cart.setPopUp(true)}>
                       <p>Continuar con la compra</p>
                 </Link>
               </div>

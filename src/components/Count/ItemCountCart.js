@@ -10,6 +10,9 @@ const ItemCount = ({id,stock}) => {
   const [topItem,setTopItem] = useState(false)
 
   useEffect(()=>{
+    if(parseInt(count) === parseInt(stock)){
+      setTopItem(true)
+    }
     setCount(getQuantity(id))
 },[total,id]); // eslint-disable-line react-hooks/exhaustive-deps
 
@@ -28,6 +31,9 @@ const ItemCount = ({id,stock}) => {
     if(count + 1 === parseInt(stock)){
       setTopItem(true)
       updateQuantity(id,parseInt(count)+1)
+    }
+    if(count + 1 > parseInt(stock)){
+      setTopItem(true)
     }
     else{
       updateQuantity(id,parseInt(count)+1)

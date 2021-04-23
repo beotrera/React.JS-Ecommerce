@@ -78,15 +78,17 @@ const Cart =({children})=>{
         totalItems()
     }
 
-    const getQuantity=(id,value)=>{
-        const itemCart= cartItem.find(x=> x.item.id === id)
-        return itemCart.quantity
-
+    const getQuantity=(id)=>{
+        if(cartItem.length !== 0){
+            const itemCart= cartItem.find(x=> x.item.id === id)
+            return itemCart.quantity
+        }
+        return 0
     }
 
 
     return(
-        <CartContext.Provider value={{cartItem,total,lastItem,addItem,clear,pullItem,totalPrice,StockAvailable,updateQuantity,getQuantity,popUp,setPopUp}}>
+        <CartContext.Provider value={{cartItem,total,lastItem,addItem,clear,pullItem,totalPrice,StockAvailable,updateQuantity,popUp,setPopUp,getQuantity}}>
             {children}
         </CartContext.Provider>
     )
